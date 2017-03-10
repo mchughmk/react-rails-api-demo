@@ -8,6 +8,6 @@ class Api::StatesController < ApplicationController
     private
 
     def set_country
-        @country = Country.find_by code: params[:country_id]
+        @country = Country.find_by! code: params[:country_id]
     end
 end

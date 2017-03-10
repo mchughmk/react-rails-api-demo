@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   namespace :api do
-    resources :countries, only: [:index, :show] do
+    resources :countries, only: [:index] do
       resources :states, only: [:index]
     end
   end
