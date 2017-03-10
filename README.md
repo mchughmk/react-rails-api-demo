@@ -6,11 +6,11 @@ This is a project to demo a simple application with a React frontend and a Rails
 
 This project uses [Docker](https://www.docker.com/) and Docker Compose to setup two containers: one for the website and one for a Postgres database.  To get running, do the following:
 
-1. `docker-compose run --rm web npm install`
-2. `docker-compose up -d db`
-3. `docker-compose run --rm web rails db:create`
-4. `docker-compose run --rm web rails db:migrate`
-5. `docker-compose run --rm web rails db:seed`
+        docker-compose run --rm web npm install
+        docker-compose up -d db
+        docker-compose run --rm web rails db:create
+        docker-compose run --rm web rails db:migrate
+        docker-compose run --rm web rails db:seed
 
 After the first setup, running `docker-compose up -d` will run all necessary containers  in daemon mode.
 
